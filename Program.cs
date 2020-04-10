@@ -6,7 +6,12 @@ namespace Program
     {
         static void Main(string[] args)
         {
-
+            Player user1 = new Player();
+            Console.WriteLine("Allowable players action: ");
+            user1.Play();
+            user1.Record();
+            user1.Pause();
+            user1.Stop();
         }
         interface IPlayable
         {
