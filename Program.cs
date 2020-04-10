@@ -20,5 +20,24 @@ namespace Program
             void Pause();
             void Stop();
         }
+        class Player : IPlayable, IRecodable
+        {
+            public void Play()
+            {
+                Console.WriteLine("--play--");
+            }
+            public void Pause()
+            {
+                Console.WriteLine("--pause--");
+            }
+            public void Stop()
+            {
+                Console.WriteLine("--stop--");
+            }
+            public void Record()
+            {
+                Console.WriteLine("--record--");
+            }
+        }
     }
 }
